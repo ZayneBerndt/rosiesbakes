@@ -1,0 +1,35 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+.drop-down {
+	display: inline-block;
+}
+
+.toggle {
+	color: #fff;
+	background: #6495ed;
+	padding: 20px;
+	border-radius: 4px;
+	display: inline-block;
+	cursor: pointer;
+	
+	&:hover {
+		background: #527bc5;
+	}
+}
+
+.menu {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.menu-item {
+	padding: 10px 20px;
+	
+	&:hover {
+		background: #527bc5;
+	}
+}

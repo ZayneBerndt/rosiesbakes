@@ -1,14 +1,14 @@
 import React from 'react';
-
+import Navbar from './Components/Navbar';
 
 
 function App() {
   return (
-    <div className="App">
-  
-       
-      
-    </div>
+    <React.Fragment>
+      <div className="App">
+        <Navbar/>
+      </div>
+    </React.Fragment>
   );
 }
 
