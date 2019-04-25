@@ -1,12 +1,15 @@
 import React from 'react';
-import Navbar from './Components/Navbar';
+import Navigation from './Components/Navbar';
+import CarouselImg from './Components/Carousel';
+
 
 
 function App() {
   return (
     <React.Fragment>
       <div className="App">
-        <Navbar/>
+        <Navigation/>
+        <CarouselImg/>
       </div>
     </React.Fragment>
   );

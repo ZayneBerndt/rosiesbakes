@@ -1,76 +1,30 @@
 import React from "react";
 import "../assets/Navbar.css";
+import { Navbar } from 'react-bootstrap';
 
-class Navbar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isActive: false
-    };
-    this.buttonRef = React.createRef();
-    this.menuRef = React.createRef();
-  }
 
-  toggleMenu() {
-    console.log(this.state.isActive);
-    this.setState(prevState => ({ isActive: !prevState.isActive }));
-  }
 
-  openMenu() {
-    this.setState({ isActive: true });
-  }
 
-  closeMenu() {
-    this.setState({ isActive: false });
-  }
 
-  handleBlur() {
-    const self = this;
-    self.blurTimer = setTimeout(function() {
-      const buttonNode = self.buttonRef.current;
-      const activeEl = buttonNode.ownerDocument.activeElement;
-      if (buttonNode && activeEl === buttonNode) return self.closeMenu();
-      const menuNode = self.menuRef.current;
-      if (menuNode === activeEl) {
-        return;
-      }
-      if (menuNode && menuNode.contains(activeEl)) return;
-      if (self.state.isActive) self.closeMenu();
-    }, 0);
-  }
+
+class Navigation extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div
-          className="drop-down"
-          onClick={() => this.toggleMenu()}
-          onFocus={() => this.openMenu()}
-          onBlur={() => this.handleBlur()}
-          tabIndex="0"
-        >
-          <div className="toggle" ref={this.buttonRef}>
-            Menu
-          </div>
-          {this.state.isActive && (
-            <ul className="menu" ref={this.menuRef}>
-              <li className="menu-item" tabIndex="0">
-                Home
-              </li>
-              <li className="menu-item" tabIndex="0">
-                Profile
-              </li>
-              <li className="menu-item" tabIndex="0">
-                Account
-              </li>
-              <li className="menu-item" tabIndex="0">
-                Sign out
-              </li>
-            </ul>
-          )}
-        </div>
+          <Navbar className="navbar" >
+              <h6 className="title">Rosies Bakes</h6>
+              <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                <a href="#" className="menufont">Price Menu</a>
+                <a href="#" className="menufont">Contact</a>
+                <a href="#" className="menufont">FAQ</a>
+                </div>
+            </div>
+          </Navbar>  
       </React.Fragment>
     );
   }
 }
 
-export default Navbar;
+export default Navigation;
