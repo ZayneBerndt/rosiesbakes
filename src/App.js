@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from './Components/Navbar';
-import CarouselImg from './Components/Carousel';
+import Content from './Components/Content';
 
 
 
@@ -9,7 +9,7 @@ function App() {
     <React.Fragment>
       <div className="App">
         <Navigation/>
-        <CarouselImg/>
+        <Content/>
       </div>
     </React.Fragment>
   );
