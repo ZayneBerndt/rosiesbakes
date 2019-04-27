@@ -1,58 +1,117 @@
-.grid-container {
-    display: grid;
-    height: 400px;
-    align-content: start;
-    grid-template-columns: auto auto auto;
-    grid-gap: 10px;
-    margin-left: 30px;
-  }
+.column {
+  float: left;
+  width: 90%;
+  height: 300px; /* Should be removed. Only for demonstration */
+  background-color:#aaa;
+  margin-top: 20px;
+}
 
-  .grid-container img {
-    position:absolute;
-    min-width:100%;
-  }
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-  .grid-container2 {
-    display: inline-grid;
-    height: 400px;
-    width:60%;
-    align-content: start;
-    grid-gap: 10px;
-    background-color: #FEF1F4;
-    padding: 10px;
-    margin: 30px;
-    text-align: center;
-  }
+#col0{
+  width:5%;
+  background: white;
+}
 
-  .grid-container3 {
-    display: inline-grid;
-    height: 400px;
-    width:30%;
-    align-content: start;
-    grid-gap: 10px;
-    background-color: #FEF1F4;
-    padding: 10px;
-    margin: 20px;
-    text-align: center;
-  }
+#col1 {
+  background-color: #FEF1F4;;
+  height:400px;
+  width:55%;
+}
 
-  .content-text{
-    position: relative;
-    left: 30%;
-    font-size: 50px;
-    color: black;
-    text-align:left;
-    background:;
-    width: 50%;
-  }
+#col2 {
+  background:green;
+  width:33.6%;
+  height:400px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
 
-  .content-parra{
-    position: relative;
-    left: 31%;
-    font-size: 20px;
-    color: black;
-    text-align:left;
-    background:;
-    width: 50%;
-  }
-  
+#col3 {
+  background:blue;
+  width:29%;
+}
+
+#col4 {
+  background:pink;
+  width:29%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#col5 {
+  background:violet;
+  width:29%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#col6 {
+  background:violet;
+  width:16.84%;
+  margin-top: 20px;
+  height:250px;
+}
+
+#col7 {
+  background:violet;
+  width:16.84%;
+  margin-top: 20px;
+  margin-left: 20px;
+  height:250px;
+}
+
+#col8 {
+  background:violet;
+  width:16.84%;
+  margin-top: 20px;
+  margin-left: 20px;
+  height:250px;
+}
+
+#col9 {
+  background:violet;
+  width:16.84%;
+  margin-top: 20px;
+  margin-left: 20px;
+  height:250px;
+}
+
+#col10 {
+  background:violet;
+  width:16.84%;
+  margin-top: 20px;
+  margin-left: 20px;
+  height:250px;
+}
+
+.content-text{
+  position: relative;
+  left: 30%;
+  font-size: 50px;
+  color: black;
+  text-align:left;
+  background:;
+  width: 50%;
+}
+
+.content-parra{
+  position: relative;
+  left: 31%;
+  font-size: 20px;
+  color: black;
+  text-align:left;
+  background:;
+  width: 50%;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
