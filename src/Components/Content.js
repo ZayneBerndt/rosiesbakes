@@ -7,7 +7,7 @@ class CarouselImg extends React.Component {
       <React.Fragment>
         <div className="row">
           <div id="col0" className="column" />
-          <div className="column">Column</div>
+          <div className="column"><img src={require('../assets/img/cake1.jpg')} width={"100%"} height={"300px"}/></div>
           <div id="col0" className="column" />
         </div>
         <div className="row">
@@ -27,20 +27,20 @@ class CarouselImg extends React.Component {
         </div>
           </div>
           <div id="col2" className="column">
-            Column
+            <img src={require('../assets/img/cake3.jpg')} width={"100%"} height={"300px"} />
           </div>
           <div id="col0" className="column" />
         </div>
         <div className="row">
           <div id="col0" className="column" />
           <div id="col3" className="column">
-            Column
+          <img src={require('../assets/img/cake1.jpg')} width={"100%"} height={"400px"} />
           </div>
           <div id="col4" className="column">
-            Column
+          <img src={require('../assets/img/chef.jpg')} width={"100%"} height={"400px"} />
           </div>
           <div id="col5" className="column">
-            Column
+          <img src={require('../assets/img/cake3.jpg')} width={"100%"} height={"400px"} />
           </div>
           <div id="col0" className="column" />
         </div>

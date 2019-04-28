@@ -6,6 +6,12 @@
   margin-top: 20px;
 }
 
+.column .img {
+  width: 100%;
+  height: auto;
+
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -21,20 +27,27 @@
 #col1 {
   background-color: #FEF1F4;;
   height:400px;
-  width:55%;
+  width:63%;
 }
 
+
 #col2 {
-  background:green;
-  width:33.6%;
+  
+  width: 25.55%;
   height:400px;
   margin-top: 20px;
   margin-left: 20px;
 }
 
+#col2 .img {
+  width: 100%;
+  height: auto;
+}
+
 #col3 {
   background:blue;
   width:29%;
+  height:400px;
 }
 
 #col4 {
@@ -42,6 +55,12 @@
   width:29%;
   margin-top: 20px;
   margin-left: 20px;
+  height:400px;
+}
+
+#col4 .img {
+  width: 100%;
+  height: auto;
 }
 
 #col5 {
@@ -49,6 +68,7 @@
   width:29%;
   margin-top: 20px;
   margin-left: 20px;
+  height:400px;
 }
 
 #col6 {
