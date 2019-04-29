@@ -11,8 +11,8 @@ function App() {
   return (
     <React.Fragment>
       <div className="App">
-        <Navigation/>
-        <Content/>
+        {/* <Navigation/>
+        <Content/> */}
         <Route path="/Booking" component={Booking} />
       </div>
     </React.Fragment>
