@@ -1,15 +1,4 @@
 .navbar {
-  /* background: #FFEEF2; */
-
-  /* background-image: linear-gradient(
-    to bottom,
-    #fff,
-    #ffe3ec,
-    #ffd6e3,
-    #ffc8da,
-    #ffbad1,
-    #ffb4cd
-  ); */
   height: 80px;
   position: relative;
   display: -ms-flexbox;
@@ -21,7 +10,6 @@
   -ms-flex-pack: justify;
   justify-content: center;
   padding: 0.5rem 1rem;
-  /* box-shadow: 1px 1px 1px pink; */
 }
 
 .title {
@@ -35,16 +23,18 @@
   font-family: "Pacifico", cursive;
   font-size: 25px;
   color: white;
-  padding: 16px;
+  padding: 5px;
+  right:20px;
   border: solid 1px white;
   border-radius: 5px;
   cursor: pointer;
+
 }
 
 .dropdown {
   position: absolute;
   display: inline-block;
-  right: 30px;
+  right: 60px;
 }
 
 .dropdown-content {

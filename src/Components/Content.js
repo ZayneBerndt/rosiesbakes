@@ -7,7 +7,7 @@ class CarouselImg extends React.Component {
       <React.Fragment>
         <div className="row">
           <div id="col0" className="column" />
-          <div className="column"><img src={require('../assets/img/cake1.jpg')} width={"100%"} height={"300px"}/></div>
+          <div className="column"><img src={require('../assets/img/cake1.jpg')} alt="pic" width={"100%"} height={"400px"}/></div>
           <div id="col0" className="column" />
         </div>
         <div className="row">
@@ -19,52 +19,55 @@ class CarouselImg extends React.Component {
         </div>
         <div className="content-parra">
           <p>
-            Ipsum loewm somehting goes here for cakes and <br />
-            Ipsum loewm somehting goes here <br/>
-            Ipsum loewm somehting goes here for cakes <br />
-            Ipsum loewm somehting goes here for
-          </p>
+           I’ve loved baking since I was a little girl, my first “baking” memories are making pretend cakes with mud and leaves, until my wonderful mum bought me a children’s oven.</p>
         </div>
           </div>
           <div id="col2" className="column">
-            <img src={require('../assets/img/cake3.jpg')} width={"100%"} height={"300px"} />
+            <img src={require('../assets/img/cake3.jpg')} alt="pic" width={"100%"} height={"300px"} />
           </div>
           <div id="col0" className="column" />
         </div>
         <div className="row">
           <div id="col0" className="column" />
           <div id="col3" className="column">
-          <img src={require('../assets/img/cake1.jpg')} width={"100%"} height={"400px"} />
+          <img src={require('../assets/img/cake1.jpg')} alt="pic" width={"100%"} height={"400px"} />
           </div>
           <div id="col4" className="column">
-          <img src={require('../assets/img/chef.jpg')} width={"100%"} height={"400px"} />
+          <img src={require('../assets/img/chef.jpg')} alt="pic" width={"100%"} height={"400px"} />
           </div>
           <div id="col5" className="column">
-          <img src={require('../assets/img/cake3.jpg')} width={"100%"} height={"400px"} />
+          <img src={require('../assets/img/slice.jpg')} alt="pic" width={"100%"} height={"400px"} />
           </div>
           <div id="col0" className="column" />
+        </div>
+        <div className="row" >
+          <div id="textrow">MY CAKE COLLECTION</div>
         </div>
         <div className="row">
           <div id="col0" className="column"/>
           <div id="col6" className="column">
-            Column
+          <img src={require('../assets/img/cake1.jpg')} alt="pic" width={"100%"} height={"250px"} />
           </div>
           <div id="col7" className="column">
-            Column
+          <img src={require('../assets/img/wedding.jpg')} alt="pic" width={"100%"} height={"250px"} />
           </div>
           <div id="col8" className="column">
-            Column
+          <img src={require('../assets/img/cake3.jpg')} alt="pic" width={"100%"} height={"250px"} />
           </div>
           <div id="col9" className="column">
-          Column
+          <img src={require('../assets/img/slice.jpg')} alt="pic" width={"100%"} height={"250px"} />
           </div>
           <div id="col10" className="column">
-          Column
+          <img src={require('../assets/img/birthday.jpg')} alt="pic" width={"100%"} height={"250px"} />
         </div>
           <div id="col0" className="column" />
         </div>
+        <div className="row" >
+          <div id="textrow">INSTAGRAM</div>
+          
+        </div>
         <div class="footer">
-          <p>Footer</p>
+          <p>Zayne Berndt 2019 copyright</p>
         </div>
       
       </React.Fragment>
